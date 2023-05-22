@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap');
+
+body {
+  background-color: #16181F; /* Replace with your desired color */
+}
+
+.logo-container {
+  position: fixed;
+  top: 10;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;/* Adjust the margin as needed */
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.hero-line {
+  font-size: 18px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;/* Adjust the margin as needed */
+  text-align: center;
+}
+
+.hero-line h1 {
+  justify-self: center;
+  text-algin: center;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  color: #E5E5E5;
+}
+
+
+.below-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10%;
+  height: 70vh;
+  z-index: 1;
+}
+
+
+
+.below-hero h1 {
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  color: #FF6F61;
+}
+
+.gradient-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.gradient-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+.small-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  color: #E5E5E5;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 690px;
+  white-space: nowrap;
+  z-index: 2;
+  padding: 20px 0; /* Adjust the padding as needed */
+}
+
+
+
+.waitlist-section {
+  text-align: center;
+  position: absolute;
+  margin-top: 1px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.waitlist-section h3 {
+  font-family: 'OUTFIT', sans-serif;
+  font-size: 18px;
+  font-weight: 100; /* Use font-weight: 300 for a lighter font */
+  color: #EFEFEF;
+  margin-top: 200px;
+}
+
+.waitlist-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.waitlist-section input {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgba(153, 153, 153, 0.31);
+  color: #E5E5E5;
+  width: 300px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.waitlist-section input[type="submit"] {
+  background-color: #E5E5E5;
+  color: #000000;
+  cursor: pointer;
+  height: 50px;
+  width: 320px;
+  font-size: 18px;
+}
+
+.small-text {
+  font-size: 8px; /* Adjust the font size as per your preference */
+  color: #686868; /* Set the desired color */
+  font-family: Arial, sans-serif; /* Set the desired font family */
+}
+
+
+
+
+
+
+#message {
+  display: none;
+  color: #E5E5E5;
+  font-size: 16px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.fixed-image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;/* Optional: Set a background color for the fixed image container */
+}
+
+.fixed-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.behind-image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.bottom-text {
+  position: fixed;
+  bottom: auto;
+  top: 70%; /* Adjust the distance from the top as per your preference */
+  left: 0;
+  width: 100%;
+  text-align: center;
+ /* Optional: Set a background color for the bottom text container */
+}
+
+
+.bottom-text p {
+  text-algin: center;
+  margin: 0;
+  padding: 10px; /* Optional: Add padding to the text */
+  font-size: 16px; /* Adjust the font size as per your preference */
+  color: #999999; /* Set the desired color */
+  bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+  .hero-line h1 {
+    font-size: 24px;
+  }
+
+  .below-hero h1 {
+    font-size: 20px;
+  }
+
+  .fixed-image img {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for mobile devices */
+  .hero-line h1 {
+    font-size: 20px;
+  }
+
+  .below-hero h1 {
+    font-size: 18px;
+  }
+
+  .fixed-image img {
+    max-width: 50%;
+  }
+
+}
